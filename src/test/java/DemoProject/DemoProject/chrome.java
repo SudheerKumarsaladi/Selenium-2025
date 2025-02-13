@@ -13,19 +13,19 @@ public class chrome {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://petstore.octoperf.com/");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.linkText("Enter the Store")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Sign In")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.name("username")).sendKeys("j2ee");
 		driver.findElement(By.name("password")).clear();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.name("password")).sendKeys("j2ee");
 		driver.findElement(By.name("signon")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.linkText("Sign Out")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.close();
 	}
 
