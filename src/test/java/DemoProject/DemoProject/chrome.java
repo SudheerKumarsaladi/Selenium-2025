@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 public class chrome {
 	
 	@Test
@@ -27,6 +29,12 @@ public class chrome {
 		driver.findElement(By.linkText("Sign Out")).click();
 		Thread.sleep(3000);
 		driver.close();
+	}
+	
+	@Test
+	public void test()
+	{
+		System.out.println("Sudheer");
 	}
 
 
